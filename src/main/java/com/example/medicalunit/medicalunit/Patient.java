@@ -1,40 +1,47 @@
 package com.example.medicalunit.medicalunit;
 
 public class Patient {
+    private String id;
     private String name;
-    private Physician physician;
-    private Pharmacist pharmacist;
+    private String age;
+    private String gender;
 
-    // Constructor
-    public Patient(String name, Physician physician, Pharmacist pharmacist) {
+    public Patient(String id, String name, String age, String gender) {
+        this.id = id;
         this.name = name;
-        this.physician = physician;
-        this.pharmacist = pharmacist;
+        this.age = age;
+        this.gender = gender;
     }
 
-    // Getters
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
-    public Physician getPhysician() {
-        return physician;
-    }
-
-    public Pharmacist getPharmacist() {
-        return pharmacist;
-    }
-
-    // Setters
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setPhysician(Physician physician) {
-        this.physician = physician;
+    public String getAge() {
+        return age;
     }
 
-    public void setPharmacist(Pharmacist pharmacist) {
-        this.pharmacist = pharmacist;
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }
